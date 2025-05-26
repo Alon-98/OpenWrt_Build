@@ -57,7 +57,7 @@ git pull
 
 sed -i "'1i src-git ing https://github.com/xiealon/openwrt-package';${CONFIG_REPO}" feeds.conf.default
 sed -i "'2i src-git ing https://github.com/xiealon/small';${CONFIG_REPO}" feeds.conf.default
-git pull
+
 ./scripts/feeds update -a
 # if [ -d ./feeds/packages/lang/golang ]; then
 #   rm -rf ./feeds/packages/lang/golang
