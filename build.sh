@@ -56,8 +56,8 @@ pushd "${CONFIG_REPO}"
 git pull
 
 sed -i "/src-git ing /d; 1 i src-git ing https://github.com/xiealon/openwrt-packages;${CONFIG_REPO}" feeds.conf.default
-sed -i "'1i src-git package1 https://github.com/xiealon/openwrt-package';${CONFIG_REPO}" feeds.conf.default
-sed -i "'2i src-git package2 https://github.com/xiealon/small';${CONFIG_REPO}" feeds.conf.default
+sed -i "'1i src-git ing https://github.com/xiealon/openwrt-package';${CONFIG_REPO}" feeds.conf.default
+sed -i "'2i src-git ing https://github.com/xiealon/small';${CONFIG_REPO}" feeds.conf.default
 git pull
 ./scripts/feeds update -a
 # if [ -d ./feeds/packages/lang/golang ]; then
